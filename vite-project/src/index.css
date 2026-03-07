@@ -1,0 +1,38 @@
+
+body {
+  font-family: 'Open Sans Variable', sans-serif;
+}
+header {
+  
+
+
+    nav{
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+
+
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      padding: 0,5rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+
+      &.active {
+        background-color: aqua;
+      }
+    }
+
+  
+}
+
+main {
+ text-align: center;
+}
+
+footer {
+  text-align: center;
+}
