@@ -30,10 +30,23 @@ main {
     height: 200px;
   }
 
+  .current_series {
+    position: absolute;
+    top: -20px;
+    background-color: rgb(91, 147, 221);
+    font-size: 20px;
+  }
+
+  .bottone{
+    background-color: rgb(91, 147, 221);
+    font-size: 15px;
+  }
+
 
  /* prima parte*/
   .nero{
     background-color: black;
+    position: relative;
   }
   
   .azzurro {

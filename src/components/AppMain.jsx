@@ -169,6 +169,8 @@ export default function AppMain (){
             <section>
                 <div className="nero pt-5 pb-5">
                     <div className="container">
+
+                        <p className='text-white current_series pt-2 pb-2 ps-3 pe-3 fw-bold'>CURRENT SERIES</p>
                         <div className="row text-center">
                             {comics.map((comic) => (
                                 <div key={comic.id} className="col-6 col-md-2 mb-4">
@@ -176,6 +178,9 @@ export default function AppMain (){
                                     <p className="text-white text-uppercase">{comic.series}</p>
                                 </div>
                             ))}
+                        </div>
+                        <div className="d-flex justify-content-center mt-4">
+                            <button className='text-white bottone pt-2 pb-2 ps-5 pe-5 fw-bold'>LOAD MORE</button>
                         </div>
                     </div>
                  </div>                
