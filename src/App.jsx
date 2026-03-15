@@ -1,8 +1,6 @@
-import reactLogo from './assets/react.svg'
-import AppFooter from './components/AppFooter'
-import AppHeader from './components/AppHeader'
 import AppMain from './components/AppMain'
-
+import AppHeader from './components/AppHeader'
+import AppFooter from './components/AppFooter'
 function App() {
 
   return (

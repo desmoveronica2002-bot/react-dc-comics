@@ -156,6 +156,18 @@ const comics = [
 ];
 
 
+
+function ComicCard({ comic }) {
+  return (
+    <div className="col-6 col-md-2 mb-4 text-center">
+      <img src={comic.thumb} alt={comic.series} className="grandezza_fissa mb-2" />
+      <p className="text-white text-uppercase">{comic.series}</p>
+      <p className="text-white fw-bold">{comic.price}</p>
+    </div>
+  );
+}
+
+
 export default function AppMain (){
 
         return (
@@ -166,7 +178,7 @@ export default function AppMain (){
             </section>
 
 
-            <section>
+          {/* <section>
                 <div className="nero pt-5 pb-5">
                     <div className="container">
 
@@ -184,6 +196,20 @@ export default function AppMain (){
                         </div>
                     </div>
                  </div>                
+            </section>*/}  
+
+            <section className="nero pt-5 pb-5">
+                <div className="container">
+                    <p className='text-white current_series pt-2 pb-2 ps-3 pe-3 fw-bold'>CURRENT SERIES</p>
+                    <div className="row text-center">
+                        {comics.map((comic) => (
+                            <ComicCard key={comic.id} comic={comic} />
+                        ))}
+                    </div>
+                    <div className="d-flex justify-content-center mt-4">
+                        <button className='text-white bottone pt-2 pb-2 ps-5 pe-5 fw-bold'>LOAD MORE</button>
+                    </div>
+                </div>
             </section>
 
 
